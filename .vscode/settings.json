@@ -1,0 +1,3 @@
+{
+  "rubyLsp.customRubyCommand": "\"ruby.customCommand\": \"eval \\\"$(rbenv init --path)\\\" && rbenv global\""
+}
