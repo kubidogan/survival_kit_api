@@ -1,0 +1,2 @@
+class SurvivalKit < ApplicationRecord
+end
