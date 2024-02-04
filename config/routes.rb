@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :survival_kits
+  collection do
+    get 'nearby', to: 'survival_kits#nearby'
+  end
 end

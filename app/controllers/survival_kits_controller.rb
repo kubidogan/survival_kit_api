@@ -34,6 +34,17 @@ class SurvivalKitsController < ApplicationController
     head :no_content
   end
 
+  def nearby
+    # TODO: Implement logic to find nearby survival kits based on user's location
+    # For demonstration purposes, using hardcoded values
+    user_latitude = params[:latitude].to_f
+    user_longitude = params[:longitude].to_f
+
+    nearby_kits = SurvivalKit.near([user_latitude, user_longitude], 10) # Find kits within 10 kilometers
+
+    render json: nearby_kits
+  end
+
   private
 
   def set_survival_kit
