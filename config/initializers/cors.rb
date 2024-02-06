@@ -10,7 +10,7 @@ module SurviveKitApi
     # CORS configuration
     config.middleware.use Rack::Cors do
       allow do
-        origins 'http://localhost:3000' # Update with your React development server URL
+        origins 'http://localhost:3001' # Update with your React development server URL
         resource '/survival_kits', headers: :any, methods: [:get]
       end
     end
