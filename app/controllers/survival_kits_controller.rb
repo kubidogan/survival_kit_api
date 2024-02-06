@@ -34,16 +34,18 @@ class SurvivalKitsController < ApplicationController
     head :no_content
   end
 
-  def nearby
-    # TODO: Implement logic to find nearby survival kits based on user's location
-    # For demonstration purposes, using hardcoded values
-    user_latitude = params[:latitude].to_f
-    user_longitude = params[:longitude].to_f
+  # def nearby
+  #   user_latitude = params[:latitude].to_f
+  #   user_longitude = params[:longitude].to_f
 
-    nearby_kits = SurvivalKit.near([user_latitude, user_longitude], 10) # Find kits within 10 kilometers
+  #   if user_latitude.zero? || user_longitude.zero?
+  #     render json: { error: 'Invalid location parameters' }, status: :unprocessable_entity
+  #     return
+  #   end
 
-    render json: nearby_kits
-  end
+  #   nearby_kits = SurvivalKit.near([user_latitude, user_longitude], 10)
+  #   render json: nearby_kits
+  # end
 
   private
 
