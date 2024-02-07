@@ -58,5 +58,5 @@ Rails.application.configure do
 
   config.action_controller.raise_on_missing_callback_actions = true
   # config.hosts << "loosely-one-meerkat.ngrok-free.app"
-  # config.hosts << '0ded-82-47-250-222.ngrok-free.app '
+  # config.hosts << 'a1zbte-ip-82-47-250-222.tunnelmole.net'
 end
