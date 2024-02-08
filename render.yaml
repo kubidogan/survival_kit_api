@@ -1,6 +1,6 @@
 databases:
-  - name: survivalapi
-    databaseName: survivalapi
+  - name: mysite
+    databaseName: mysite
     user: mysite
     plan: free
 
