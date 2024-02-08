@@ -1,5 +1,4 @@
 # config/routes.rb
 Rails.application.routes.draw do
-  get 'render/index'
-  root 'render#index'
+  resources :survival_kits, only: [:index, :show, :create, :update, :destroy]
 end
