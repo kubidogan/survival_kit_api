@@ -1,4 +1,6 @@
 require "active_support/core_ext/integer/time"
+require 'sprockets/railtie'
+require 'rails/all'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
