@@ -47,6 +47,8 @@ class SurvivalKitsController < ApplicationController
   #   render json: nearby_kits
   # end
 
+  # for deploy
+
   private
 
   def set_survival_kit
